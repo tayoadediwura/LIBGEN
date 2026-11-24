@@ -1,0 +1,102 @@
+.add_book_wrapper {
+  padding: 20px;
+}
+
+.add_book_section {
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+}
+
+.add_book_section h2 {
+  color: #ffe400;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.api_search_bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.api_search_bar input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.submit_book_btn {
+  padding: 10px 16px;
+  background-color: #ffe400;
+  color: #101010;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit_book_btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.api_error_msg {
+  color: #ff6b6b;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.api_results_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.api_result_card {
+  background-color: #262626;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.api_result_card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.api_result_info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.api_result_info h4 {
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0;
+}
+
+.api_result_info p,
+.api_result_info span {
+  color: #b5b5b5;
+  font-size: 13px;
+  margin: 0;
+}
+
+.api_result_info .submit_book_btn {
+  margin-top: auto;
+  width: 100%;
+}
